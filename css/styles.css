@@ -1,0 +1,282 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* navigation bar  */
+#navbar{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+
+/* navigation bar: logo and image   */
+
+#logo{
+    margin: 10px 34px;
+
+}
+
+#logo img{
+    height: 70px;
+    margin: 20px 2px;
+}
+
+/* navigation bar:  list styling  */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(49, 42, 42);
+    position: absolute;
+    height: 15vh;
+    width: 98.9vw;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    /* by default it is none */
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+
+/* HOME */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    /* padding: 150px 300px; */
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+#home::before{
+    content: "";
+    /* background: url(/FoodWebsite1/images/bg.jpg);  */
+    background: url(../images/bg2.jpg) no-repeat center center/cover;
+    /* or we can do this too and basically here .. represents going back by one folder  */
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: bold; */
+    font-size: 2rem;
+
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#home button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Services Section  */
+
+#services-container{
+    /* border: 2px solid red; */
+    margin: 30px 150px;
+
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 3px;
+    margin: 5px 5px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    
+}
+
+#services .box img{ 
+   height: 100px;
+   margin: auto;
+   display: block;
+   /* we have to do both display block and margin as auto for the image to get center aligned */
+}
+
+#services .box p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+} 
+
+
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+    border: 2px solid red;
+    margin: 5rem 0 0;
+    height: 50rem;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../images/bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.8;
+}
+
+#clients{
+    border: 2px solid blue;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    border: 2px solid red;
+    height: 100vh;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.9;
+    background: url(../images/contact_us.jpg) no-repeat center center/cover;
+    /* no-repeat center center/cover; */
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 34px; */
+}
+
+
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+
+
+#contact-box label, textarea{
+   font-size: 1.3rem;    
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+
+footer{
+    background: rgb(49, 42, 42);;
+    color: whitesmoke;
+    padding: 9px 20px;
+}
+
+
+
+/* Utility Classes  */
+
+.h-primary{
+    font-size: 3rem;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.btn{
+    padding: 11px 10px;
+    border: 1px solid whitesmoke;
+    background-color: bisque;
+    color: white;
+    margin: 30px;
+    font-size: 1.5rem;
+    border-radius: 23px;
+    text-decoration: none;
+
+}
+
+.center{
+    text-align: center;
+}
