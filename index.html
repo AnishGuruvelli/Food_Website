@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Restaurant</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1110px)" href="css/phone.css">
+</head>
+<body>
+    <!--
+    <TODO-1>navbar</TODO-1>: 
+    <TODO-2>home</TODO-2>: 
+    <TODO-3>bg in home</TODO-3>: 
+    <TODO-4>utility in classes</TODO-4>: 
+    <TODO-5>styling texts</TODO-5>: 
+    <TODO-6>styling buttons</TODO-6>: 
+    <TODO-7>services</TODO-7>: 
+    <TODO-8>clients</TODO-8>:  
+    -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/profilephoto.png" alt="Heyy, I am Anish">
+        </div>
+        <ul>
+            <!-- li.item{<a></a>}*4 this is what we are ideally supposed to write this instead of typing everything -->
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section id="home">
+        <h1 class="h-primary">NOTRE RESTAURANT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+        <p>Order food from your favourite restaurant now.</p>
+        <button class="btn"><a href="#">We Are Open!!!</a></button>
+    </section>
+
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+
+        <div id="services">
+
+            <div class="box">
+                <img src="images/menu1.jpg"" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptatem!</p>
+            </div>
+            <div class="box">
+                <img src="images/menu2.jpg"" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, tenetur!</p>
+            </div>
+            <div class="box">
+                <img src="images/menu3.jpg"" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, omnis.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="images/client1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="images/client2.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="https://www.gizmochina.com/wp-content/uploads/2020/07/Xiaomi-Logo-White-Background.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="https://as-images.apple.com/is/og-default?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1525370171638" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="https://niharskill.com/wp-content/uploads/2020/11/msft-microsoft-logo-2-3.jpg" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter a message"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.notrerestaurant.com All rights reserved!
+        </div>
+    </footer>
+
+</body>
+</html>
